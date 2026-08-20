@@ -1,0 +1,9 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        seen = set() #you get confused in map and set
+        for n in nums:
+            if n in seen:
+                return True
+            seen.add(n) #if not in seen then add
+        return False        
+        
